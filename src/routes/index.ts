@@ -1,11 +1,10 @@
 import Router,{ Request, Response } from 'express';
 
+import productsRouter from '../models/products/routes/products.routes';
+
 const router = Router();
 
-router.get("/ping", (req: Request, res: Response) => {
-    res.json({
-        pong: true
-    })
-})
+router.use('/products', productsRouter);
+
 
 export default router;

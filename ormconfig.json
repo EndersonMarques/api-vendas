@@ -5,6 +5,9 @@
     "username": "postgres",
     "password": "root",
     "database": "apivendas",
+    "entities":[
+        "./src/models/**/typeorm/entities/*.ts"
+    ],
     "migrations": [
         "./src/shared/typeorm/migrations/*.ts"
     ],
